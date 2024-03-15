@@ -10,81 +10,159 @@
   <script defer src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">The planets</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid border-bottom px-0">
+        <a class="navbar-brand text-white text-uppercase pb-3" href="#">The planets</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="./assets/icon-hamburger.svg" class="img-fluid" alt="toggle menu">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item border-bottom mercury">
+              <div class="row p-3 vertical-middle">
+                <div class="col-2 d-flex align-items-center">
+                  <div class="rounded-circle planet"></div>
+                </div>
+                <a class="nav-link active text-white text-uppercase fw-semibold col" aria-current="page" href="#">Mercury</a>
+                <button class="btn col-2">
+                  <img src="./assets/icon-chevron.svg" class="img-fluid" alt="explore mercury">
+                </button>
+              </div>
+            </li>
+            <li class="nav-item border-bottom venus">
+              <div class="row p-3 vertical-middle">
+                <div class="col-2 d-flex align-items-center">
+                  <div class="rounded-circle planet"></div>
+                </div>
+                <a class="nav-link active text-white text-uppercase fw-semibold col" aria-current="page" href="./venus.html">Venus</a>
+                <button class="btn col-2">
+                  <img src="./assets/icon-chevron.svg" class="img-fluid" alt="explore venus">
+                </button>
+              </div>
+            </li>
+            <li class="nav-item border-bottom earth">
+              <div class="row p-3 vertical-middle">
+                <div class="col-2 d-flex align-items-center">
+                  <div class="rounded-circle planet"></div>
+                </div>
+                <a class="nav-link active text-white text-uppercase fw-semibold col" aria-current="page" href="./earth.html">Earth</a>
+                <button class="btn col-2">
+                  <img src="./assets/icon-chevron.svg" class="img-fluid" alt="explore earth">
+                </button>
+              </div>
+            </li>
+            <li class="nav-item border-bottom mars">
+              <div class="row p-3 vertical-middle">
+                <div class="col-2 d-flex align-items-center">
+                  <div class="rounded-circle planet"></div>
+                </div>
+                <a class="nav-link active text-white text-uppercase fw-semibold col" aria-current="page" href="./mars.html">Mars</a>
+                <button class="btn col-2">
+                  <img src="./assets/icon-chevron.svg" class="img-fluid" alt="explore mars">
+                </button>
+              </div>
+            </li>
+            <li class="nav-item border-bottom jupiter">
+              <div class="row p-3 vertical-middle">
+                <div class="col-2 d-flex align-items-center">
+                  <div class="rounded-circle planet"></div>
+                </div>
+                <a class="nav-link active text-white text-uppercase fw-semibold col" aria-current="page" href="./jupiter.html">jupiter</a>
+                <button class="btn col-2">
+                  <img src="./assets/icon-chevron.svg" class="img-fluid" alt="explore jupiter">
+                </button>
+              </div>
+            </li>
+            <li class="nav-item border-bottom saturn">
+              <div class="row p-3 vertical-middle">
+                <div class="col-2 d-flex align-items-center">
+                  <div class="rounded-circle planet"></div>
+                </div>
+                <a class="nav-link active text-white text-uppercase fw-semibold col" aria-current="page" href="./saturn.html">saturn</a>
+                <button class="btn col-2">
+                  <img src="./assets/icon-chevron.svg" class="img-fluid" alt="explore saturn">
+                </button>
+              </div>
+            </li>
+            <li class="nav-item border-bottom uranus">
+              <div class="row p-3 vertical-middle">
+                <div class="col-2 d-flex align-items-center">
+                  <div class="rounded-circle planet"></div>
+                </div>
+                <a class="nav-link active text-white text-uppercase fw-semibold col" aria-current="page" href="./uranus.html">uranus</a>
+                <button class="btn col-2">
+                  <img src="./assets/icon-chevron.svg" class="img-fluid" alt="explore uranus">
+                </button>
+              </div>
+            </li>
+            <li class="nav-item border-bottom neptune">
+              <div class="row p-3 vertical-middle">
+                <div class="col-2 d-flex align-items-center">
+                  <div class="rounded-circle planet"></div>
+                </div>
+                <a class="nav-link active text-white text-uppercase fw-semibold col" aria-current="page" href="./neptune.html">neptune</a>
+                <button class="btn col-2">
+                  <img src="./assets/icon-chevron.svg" class="img-fluid" alt="explore neptune">
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  <main class="mt-5 pt-5">
+    Mercury
 
-
-  Mercury
-
-  <!-- Overview Content Start -->
-
-  Mercury is the smallest planet in the Solar System and the closest 
-  to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
-  shortest of all the Sun's planets. Mercury is one of four terrestrial 
-  planets in the Solar System, and is a rocky body like Earth.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Mercury appears to have a solid silicate crust and mantle overlying a 
-  solid, iron sulfide outer core layer, a deeper liquid core layer, and 
-  a solid inner core. The planet's density is the second highest in the 
-  Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Mercury's surface is similar in appearance to that of the Moon, showing 
-  extensive mare-like plains and heavy cratering, indicating that it has 
-  been geologically inactive for billions of years. It is more heterogeneous 
-  than either Mars's or the Moon’s.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  58.6 Days
-
-  Revolution Time
-  87.97 Days
-
-  Radius
-  2,439.7 KM
-
-  Average Temp.
-  430°c
+    <!-- Overview Content Start -->
+  
+    Mercury is the smallest planet in the Solar System and the closest 
+    to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+    shortest of all the Sun's planets. Mercury is one of four terrestrial 
+    planets in the Solar System, and is a rocky body like Earth.
+  
+    Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
+  
+    <!-- Overview Content End -->
+  
+    <!-- Internal Structure Content Start -->
+  
+    Mercury appears to have a solid silicate crust and mantle overlying a 
+    solid, iron sulfide outer core layer, a deeper liquid core layer, and 
+    a solid inner core. The planet's density is the second highest in the 
+    Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+  
+    Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure -->
+  
+    <!-- Internal Structure Content End -->
+  
+    <!-- Surface Geology Content Start -->
+  
+    Mercury's surface is similar in appearance to that of the Moon, showing 
+    extensive mare-like plains and heavy cratering, indicating that it has 
+    been geologically inactive for billions of years. It is more heterogeneous 
+    than either Mars's or the Moon’s.
+  
+    Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology -->
+  
+    <!-- Surface Geology Content End -->
+  
+    01 Overview
+    02 Internal Structure
+    03 Surface Geology
+  
+    Rotation Time
+    58.6 Days
+  
+    Revolution Time
+    87.97 Days
+  
+    Radius
+    2,439.7 KM
+  
+    Average Temp.
+    430°c
+  </main>
 </body>
 </html>

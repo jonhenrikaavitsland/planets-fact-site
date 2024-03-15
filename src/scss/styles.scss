@@ -7,3 +7,35 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
+@import "./colors";
+@import "./background";
+
+.planet {
+  height: 20px;
+  width: 20px;
+}
+
+nav {
+
+  li {
+    a {
+      font-size: 0.9375rem;
+      letter-spacing: 1.364px;
+      line-height: 25px;
+    }
+  }
+
+  .navbar-brand {
+    font-family: $font-family-2-sans-serif;
+    font-size: 1.75rem;
+    letter-spacing: -1.05px;
+    margin: 10px 20px;
+  }
+}
+
+.navbar-toggler {
+  &:focus {
+    box-shadow: 0 0 0 0;
+  }
+}
