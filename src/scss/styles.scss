@@ -38,4 +38,10 @@ nav {
   }
 }
 
-
+@include media-breakpoint-up(md) {
+  nav {
+    .top-wrap {
+      border-bottom: 0 !important;
+    }
+  }
+}
