@@ -40,8 +40,22 @@ nav {
 
 @include media-breakpoint-up(md) {
   nav {
+    .list-wrap,
     .top-wrap {
       border-bottom: 0 !important;
+    }
+
+    .navbar-collapse {
+      position: static !important;
+      max-width: 100%;
+
+      ul {
+        width: 100%;
+      }
+    }
+
+    .navbar-brand {
+      width: 100%;
     }
   }
 }
