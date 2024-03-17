@@ -40,6 +40,8 @@ nav {
 
 @include media-breakpoint-up(md) {
   nav {
+    border-bottom: 1px solid #ffffff20;
+
     .list-wrap,
     .top-wrap {
       border-bottom: 0 !important;
@@ -51,6 +53,15 @@ nav {
 
       ul {
         width: 100%;
+      }
+
+      li {
+        a {
+          font-size: 0.6875rem;
+          line-height: 25px;
+          letter-spacing: 1px;
+          font-weight: 700;
+        }
       }
     }
 
