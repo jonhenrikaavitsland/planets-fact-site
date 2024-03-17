@@ -26,13 +26,16 @@ nav {
     letter-spacing: -1.05px;
   }
 
-  .planet {
-    padding-left: 0;
+  .navbar-collapse {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .navbar-toggler {
+    &:focus {
+      box-shadow: 0 0 0 0;
+    }
   }
 }
 
-.navbar-toggler {
-  &:focus {
-    box-shadow: 0 0 0 0;
-  }
-}
+
