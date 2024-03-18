@@ -47,6 +47,10 @@ nav {
       border-bottom: 0 !important;
     }
 
+    .top-wrap {
+      width: min-content;
+    }
+
     .navbar-collapse {
       position: static !important;
       max-width: 100%;
@@ -61,6 +65,12 @@ nav {
           line-height: 25px;
           letter-spacing: 1px;
           font-weight: 700;
+          opacity: 75%;
+
+          &:hover {
+            opacity: 100%;
+            transition: 500ms;
+          }
         }
       }
     }
