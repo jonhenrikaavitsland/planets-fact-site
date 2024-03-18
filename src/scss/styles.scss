@@ -38,6 +38,24 @@ nav {
   }
 }
 
+.d-grid {
+  grid-template-rows: repeat(3, min-content);
+
+  .nav-link {
+    font-size: 0.5625rem;
+    letter-spacing: 1.929px;
+  }
+
+  .active {
+    border-bottom: 4px solid;
+  }
+
+  > img {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
 @include media-breakpoint-up(md) {
   nav {
     border-bottom: 1px solid #ffffff20;
