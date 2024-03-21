@@ -29,14 +29,37 @@ export function changeColorUnderline() {
         changeBorderColor("bs-blue");
         break;
       case "/":
-        changeBorderColor("bs-cyan");
+        buttonAction("bs-cyan");
         break;
     }
   }
 
+  function buttonAction(color) {
+    let viewportWidth = window.innerWidth;
+    changeBorderColor(color);
+
+    window.addEventListener("resize", () => {
+      viewportWidth = window.innerWidth;
+      console.log(viewportWidth);
+      if (viewportWidth >= "768") {
+        changeBackgroundColor(color);
+      }
+      if (viewportWidth <= "767") {
+        changeBorderColor(color);
+      }
+    });
+  }
+
   function changeBorderColor(color) {
     const activePlanetBtn = document.querySelector("main .active");
+    activePlanetBtn.style = "";
     activePlanetBtn.style.borderBottom = `4px solid var(--${color})`;
+  }
+
+  function changeBackgroundColor(color) {
+    const activePlanetBtn = document.querySelector("main .active");
+    activePlanetBtn.style.backgroundColor = `var(--${color})`;
+    activePlanetBtn.style.borderColor = `var(--${color})`;
   }
 
   function changeActiveBtn() {
