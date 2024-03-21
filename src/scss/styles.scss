@@ -1,7 +1,9 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap');
+
 @import "./variables";
+
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -46,13 +48,30 @@ nav {
     letter-spacing: 1.929px;
   }
 
-  .active {
-    border-bottom: 4px solid;
+  .img-container {
+    height: 300px;
+
+    img {
+      justify-self: center;
+      align-self: center;
+      max-width: 111px
+    }
   }
 
-  > img {
-    justify-self: center;
-    align-self: center;
+  section {
+    h1 {
+      font-family: $font-family-2-sans-serif;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 0.6875rem;
+      line-height: 22px;
+    }
+
+    a {
+      font-size: 0.75rem;
+    }
   }
 }
 
@@ -95,6 +114,32 @@ nav {
 
     .navbar-brand {
       width: 100%;
+    }
+  }
+
+  .d-grid {
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: 1fr min-content;
+
+    ul {
+      grid-row: 2 / -1;
+      grid-column: 2 / -1;
+      border-bottom: 0 !important;
+
+      button {
+        width: 281px;
+        height: 40px;
+        border: 1px solid #FFF;
+      }
+    }
+
+    .img-container {
+      height: 460px;
+      grid-column: 1 / -1;
+  
+      img {
+        max-width: 253px
+      }
     }
   }
 }
