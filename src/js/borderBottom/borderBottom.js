@@ -36,7 +36,12 @@ export function changeColorUnderline() {
 
   function buttonAction(color) {
     let viewportWidth = window.innerWidth;
-    changeBorderColor(color);
+    if (viewportWidth >= "768") {
+      changeBackgroundColor(color);
+    }
+    if (viewportWidth <= "767") {
+      changeBorderColor(color);
+    }
 
     window.addEventListener("resize", () => {
       viewportWidth = window.innerWidth;
